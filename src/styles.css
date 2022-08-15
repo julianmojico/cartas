@@ -4,6 +4,7 @@
 
 html,
 body {
+  background-image: linear-gradient(to top, #f2b988, #f4a19c, #da94b6, #a891c5, #6b90bf);
   overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
@@ -17,7 +18,6 @@ body {
 }
 
 .carddeck {
-  background: #3B4016;
   position: fixed;
   overflow: hidden;
   width: 100%;
@@ -47,4 +47,23 @@ body {
   will-change: transform;
   border-radius: 10px;
   box-shadow: 0 12.5px 50px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+.titleContainer {
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: 1000px){
+.title {
+  width: 40vw;
+  margin: 60px auto;
+}
+}
+
+@media (max-width: 1000px){
+  .title {
+  width: 500px;
+  margin: 30px 30px;
+}
 }

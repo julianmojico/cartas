@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
 import './styles.css'
-import { ReactComponent as TitleSvg } from './title.svg'
+
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
@@ -40,8 +40,7 @@ function CardDeck({ cards, setCards }) {
 
     // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
     return <div className="carddeck">
-        
-        <TitleSvg />
+
 
         {props.map(({ x, y, rot, scale }, i) => (
             <animated.div key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
