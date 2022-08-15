@@ -4,6 +4,7 @@ import Imports from './imports'
 import { randomize, isEmptyArray } from './utils'
 import CardDeck from './CardDeck'
 
+
 function App() {
 
     const [cards, setCards] = useState([])
@@ -13,7 +14,9 @@ function App() {
     }, [cards]);
 
     return (
-        !isEmptyArray(cards) && <CardDeck cards={cards} setCards={setCards} />
+        <>
+            {!isEmptyArray(cards) && <CardDeck cards={cards} setCards={setCards} />}
+        </>
     )
 }
 
