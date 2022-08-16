@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: linear-gradient(to top, #f2b988, #f4a19c, #da94b6, #a891c5, #6b90bf);
+  background-image: linear-gradient(to top, #f2b988, #f4a19c, #da94b6, #3736C2);
   overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;
@@ -56,7 +56,7 @@ body {
 
 @media (min-width: 1000px){
 .title {
-  width: 40vw;
+  width: 60vw;
   margin: 60px auto;
 }
 }
@@ -66,4 +66,30 @@ body {
   width: 500px;
   margin: 30px 30px;
 }
+}
+
+@keyframes line-anim {
+  0% {
+      stroke-dashoffset: 283;
+  }
+  40% {
+        stroke-dashoffset: 0;
+        stroke-width: 0.6; 
+  }
+  100% {
+    fill-opacity:0.7;
+    stroke-dashoffset: 0;
+    stroke-width: 0.6; 
+    /* stroke: #B1BF41; */
+
+  }
+}
+
+path {
+  stroke: #BFE9C6;
+  fill-opacity:0;
+  stroke-width: 0; 
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: line-anim 6s ease-in-out forwards .35s;
 }
