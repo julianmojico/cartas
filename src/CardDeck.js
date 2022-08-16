@@ -5,7 +5,7 @@ import './styles.css'
 
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
-const to = (i) => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 + 6000 })
+const to = (i) => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 + 4000 })
 const from = (i) => ({ x: 0, rot: 0, scale: 1.5, y: -2000 })
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
@@ -41,11 +41,10 @@ function CardDeck({ cards, setCards }) {
     // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
     return <div className="carddeck">
 
-
         {props.map(({ x, y, rot, scale }, i) => (
             <animated.div key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
                 {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
-                <animated.div {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
+                <animated.div className="card" {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
             </animated.div>
         ))}
         <svg>
