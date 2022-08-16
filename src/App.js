@@ -3,7 +3,6 @@ import './styles.css'
 import Imports from './imports'
 import { randomize, isEmptyArray } from './utils'
 import CardDeck from './CardDeck'
-
 import { ReactComponent as TitleSvg } from './title.svg'
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
     return (
         <>
             <div className="titleContainer">
-                <TitleSvg  className="title"/>
+                <TitleSvg className="title"/>
             </div>
             {!isEmptyArray(cards) && <CardDeck cards={cards} setCards={setCards} />}
         </>
