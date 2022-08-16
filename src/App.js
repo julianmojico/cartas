@@ -4,6 +4,7 @@ import Imports from './imports'
 import { randomize, isEmptyArray } from './utils'
 import CardDeck from './CardDeck'
 import { ReactComponent as TitleSvg } from './title.svg'
+import Footer from './Footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
                 <TitleSvg className="title"/>
             </div>
             {!isEmptyArray(cards) && <CardDeck cards={cards} setCards={setCards} />}
+            <Footer/>
         </>
     )
 }

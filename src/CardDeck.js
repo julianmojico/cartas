@@ -42,7 +42,7 @@ function CardDeck({ cards, setCards }) {
     return <div className="carddeck">
 
         {props.map(({ x, y, rot, scale }, i) => (
-            <animated.div key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
+            <animated.div key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,calc(${y}px - 10vh),0)`) }}>
                 {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
                 <animated.div className="card" {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
             </animated.div>
