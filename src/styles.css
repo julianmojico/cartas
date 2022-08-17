@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: linear-gradient(150deg, #f2b988, #f4a19c, #da94b6, #6767eb);
+  background-image: linear-gradient(150deg, #F2B90A, #f4a19c, #da94b6, #672CEB);
   overscroll-behavior-y: contain;
   margin: 0;
   padding: 0;

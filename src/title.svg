@@ -12,9 +12,7 @@
         <linearGradient id="bordergradient" x1="20.49" y1="25.33" x2="463.12" y2="30.59" gradientUnits="userSpaceOnUse">
             <stop offset="0.14" stop-color="#edf257" />
             <stop offset="0.25" stop-color="#b9d449" />
-            <stop offset="0.49" stop-color="#a1c642" />
-            <stop offset="0.56" stop-color="#8ebc40" />
-            <stop offset="0.72" stop-color="#509e39" />
+            <stop offset="0.72" stop-color="#edf257" />
             <stop offset="0.99" stop-color="#389236" />
         </linearGradient>
     </defs>
