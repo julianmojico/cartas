@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "homepage": "https://julianmojico.github.io/cartas/",
   "main": "src/index.js",
   "dependencies": {
     "lodash-es": "4.17.11",
