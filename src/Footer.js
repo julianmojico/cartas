@@ -2,7 +2,7 @@ import React from 'react'
 import { BsInstagram } from 'react-icons/bs'
 import { AiOutlineCoffee } from 'react-icons/ai'
 
-const Footer = ({ }) => {
+const Footer = () => {
     return (
         <div className="footer">
             <a href="https://cafecito.app/tirandoaverde" target="_blank">
