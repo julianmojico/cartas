@@ -1,0 +1,174 @@
+repo_name: julianmojico/cartas
+report_id: 1e8e30ae2d149dd8c6cecf599ea8b235
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:52:35+00:00'
+requested_by: julianmojico
+provider: github
+branch: main
+detected_tools_count: 11
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/julianmojico/cartas
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/julianmojico/cartas
+  detection_source: Repo Metadata
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-16 23:10:41.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/julianmojico/cartas
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/.github/workflows/pages.yml
+  detection_source: ".github/workflows/pages.yml"
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-17 05:21:26.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-13 06:55:58.000000000 Z
+- name: lodash-es
+  description: Lodash exported as ES modules
+  package_url: https://www.npmjs.com/lodash-es
+  version: 4.17.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16587/default_ebd83b4f0415be108d977ea72558b13fd7c5283d.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-13 06:55:58.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in lodash
+    cve_id: CVE-2019-10744
+    cve_url: https://github.com/advisories/GHSA-jf85-cpcp-j695
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 4.17.14
+  - name: Prototype Pollution in lodash
+    cve_id: CVE-2020-8203
+    cve_url: https://github.com/advisories/GHSA-p6mc-m468-83gw
+    detected_date: Mar 12
+    severity: high
+    first_patched: 4.17.20
+  - name: Command Injection in lodash
+    cve_id: CVE-2021-23337
+    cve_url: https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+    detected_date: Mar 12
+    severity: high
+    first_patched: 4.17.21
+  - name: Regular Expression Denial of Service (ReDoS) in lodash
+    cve_id: CVE-2020-28500
+    cve_url: https://github.com/advisories/GHSA-29mw-wpgm-hmr9
+    detected_date: Mar 12
+    severity: moderate
+    first_patched: 4.17.21
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-16 23:10:41.000000000 Z
+- name: react-icons
+  description: SVG React icons of popular icon packs using ES6 imports
+  package_url: https://www.npmjs.com/react-icons
+  version: 4.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16909/default_7b9968788548874538c601457e8dcd9c74bd2051.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-16 23:10:41.000000000 Z
+- name: react-scripts
+  description: Configuration and scripts for Create React App
+  package_url: https://www.npmjs.com/react-scripts
+  version: 3.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15985/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-16 23:10:41.000000000 Z
+- name: react-spring
+  description: Cross-platform animation engine for React
+  package_url: https://www.npmjs.com/react-spring
+  version: 9.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17658/default_9126b5a628d81e3d41c9b1190587ab1aec9165c5.png
+  detection_source_url: https://github.com/julianmojico/cartas/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Julian Mojico
+  last_updated_on: 2022-08-16 23:10:41.000000000 Z
